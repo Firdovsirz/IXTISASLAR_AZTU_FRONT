@@ -15,13 +15,13 @@ export default function LanguageToggler() {
         flag: AzFlag
     });
     const [dropdown, setDropdown] = useState(false);
-    const languages = [
-        {
-            language: "Az",
-        }, {
-            language: "En",
-        }
-    ];
+    // const languages = [
+    //     {
+    //         language: "Az",
+    //     }, {
+    //         language: "En",
+    //     }
+    // ];
     const toggleDropdown = () => {
         setDropdown((prev) => !prev);
     }
@@ -35,13 +35,13 @@ export default function LanguageToggler() {
         );
     }
 
-    const handleMouseEnter = () => {
-        setDropdown(true);
-    };
+    // const handleMouseEnter = () => {
+    //     setDropdown(true);
+    // };
 
-    const handleMouseLeave = () => {
-        setDropdown(false);
-    };
+    // const handleMouseLeave = () => {
+    //     setDropdown(false);
+    // };
 
     return (
         <div
