@@ -17,9 +17,10 @@ import LineChart from "./pages/Charts/LineChart";
 import NotFound from "./pages/OtherPage/NotFound";
 import BasicTables from "./pages/Tables/BasicTables";
 import FormElements from "./pages/Forms/FormElements";
-import { ScrollToTop } from "./components/common/ScrollToTop";
-import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SubjectsPage from "./pages/Subjects/SubjectsPage";
+import { ScrollToTop } from "./components/common/ScrollToTop";
+import UserFacultiesPage from "./pages/UserFaculties/UserFaculties";
+import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SubjectDetailsPage from "./pages/SubjectDetails/SubjectDetailsPage";
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           {/* Dashboard Layout */}
           <Route index path="/" element={<UserHome />} />
           <Route index path="/subjects" element={<SubjectsPage />} />
+          <Route index path="/faculties" element={<UserFacultiesPage />} />
           <Route index path="/subjects/:subject_code" element={<SubjectDetailsPage />} />
 
           <Route element={<AppLayout />}>

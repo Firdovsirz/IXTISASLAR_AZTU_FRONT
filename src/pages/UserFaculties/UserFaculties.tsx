@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import UserHeader from "../../components/header/UserHeader"
-import UserImageSection from "../../components/user/UserImageSection";
+import UserFaculties from "../../components/user/faculties/UserFaculties";
 
-export default function UserHome() {
+export default function UserFacultiesPage() {
     useEffect(() => {
         document.documentElement.classList.remove("dark");
         localStorage.removeItem("theme");
@@ -12,7 +12,7 @@ export default function UserHome() {
         <>
             <UserHeader />
             <main className="bg-white">
-                <UserImageSection />
+                <UserFaculties />
             </main>
         </>
     )
